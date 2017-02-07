@@ -8,7 +8,7 @@
 }
 
 header {
-  margin: 25px 0px;
+  margin: 25px;
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
@@ -23,19 +23,28 @@ header {
 }
 
 #skills-container {
+  padding-top: 25px;
+  background-color: black;
+  color: white;
+}
+
+#skills-list {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 25px 0px;
-  background-color: black;
-  color: white;
 
   ul {
     list-style: none;
   }
 }
 
-#skills-header, #skills-column-one, #skills-column-two {
+#skills-header {
+  text-align: center;
+}
+
+#skills-column-one, #skills-column-two {
+  display: flex;
+  justify-content: center;
   margin: 10px;
 }
 
