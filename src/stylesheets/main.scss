@@ -1,0 +1,55 @@
+* {
+   margin: 0px;
+   padding: 0px;
+}
+
+#react-container {
+  width: 100%;
+}
+
+header {
+  margin: 25px 0px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+#skills-column-one {
+  width: 25%;
+}
+
+#skills-column-two {
+  width: 25%;
+}
+
+#skills-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 25px 0px;
+  background-color: black;
+  color: white;
+
+  ul {
+    list-style: none;
+  }
+}
+
+#skills-header, #skills-column-one, #skills-column-two {
+  margin: 10px;
+}
+
+#project-container {
+  display: flex;
+  justify-content: center;
+}
+
+.project {
+  height: 200px;
+  width: 200px;
+  margin: 25px;
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
