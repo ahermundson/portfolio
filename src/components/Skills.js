@@ -12,7 +12,7 @@ export const Skills = () => (
           <li><Arrow /> AngularJS</li>
           <li><Arrow /> ReactJS</li>
           <li><Arrow /> jQuery</li>
-          <li><Arrow /> CSS</li>
+          <li><Arrow /> CSS3</li>
           <li><Arrow /> Sass</li>
           <li><Arrow /> Bootstrap</li>
           <li><Arrow /> Javascript</li>
