@@ -1,4 +1,5 @@
 import '../stylesheets/main.scss'
+import Arrow from 'react-icons/lib/fa/caret-right'
 
 export const Skills = () => (
 
@@ -6,24 +7,36 @@ export const Skills = () => (
     <h2 id="skills-header">Technical Skills</h2>
     <div id="skills-list">
       <div id="skills-column-one">
+        <h4>Front End</h4>
         <ul>
-          <li>MEAN Stack (MongoDB, express.js, AngularJS, Node.js)</li>
-          <li>Mongoose</li>
-          <li>Firebase Authentication</li>
-          <li>Javascript</li>
-          <li>HTML5</li>
-
+          <li><Arrow /> AngularJS</li>
+          <li><Arrow /> ReactJS</li>
+          <li><Arrow /> jQuery</li>
+          <li><Arrow /> CSS</li>
+          <li><Arrow /> Sass</li>
+          <li><Arrow /> Bootstrap</li>
+          <li><Arrow /> Javascript</li>
+          <li><Arrow /> HTML5</li>
         </ul>
       </div>
       <div id="skills-column-two">
+        <h4>Back End</h4>
         <ul>
-          <li>APIs</li>
-          <li>Heroku</li>
-          <li>AJAX</li>
-          <li>CSS</li>
-          <li>PostgresQL</li>
-          <li>Git</li>
-          <li>Bootstrap</li>
+          <li><Arrow /> AJAX</li>
+          <li><Arrow /> Node.js</li>
+          <li><Arrow /> MongoDB</li>
+          <li><Arrow /> Mongoose</li>
+          <li><Arrow /> PostgresQL</li>
+        </ul>
+      </div>
+      <div id="skills-column-three">
+        <h4>Misc.</h4>
+        <ul>
+          <li><Arrow /> APIs</li>
+          <li><Arrow /> Heroku</li>
+          <li><Arrow /> Firebase Authentication</li>
+          <li><Arrow /> Git</li>
+          <li><Arrow /> Grunt / Webpack</li>
         </ul>
       </div>
     </div>
