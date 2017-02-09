@@ -7,7 +7,7 @@ export const Skills = () => (
     <h2 id="skills-header">Technical Skills</h2>
     <div id="skills-list">
       <div id="skills-column-one">
-        <h4>Front End</h4>
+        <h3>Front End</h3>
         <ul>
           <li><Arrow /> AngularJS</li>
           <li><Arrow /> ReactJS</li>
@@ -20,7 +20,7 @@ export const Skills = () => (
         </ul>
       </div>
       <div id="skills-column-two">
-        <h4>Back End</h4>
+        <h3>Back End</h3>
         <ul>
           <li><Arrow /> AJAX</li>
           <li><Arrow /> Node.js</li>
@@ -30,7 +30,7 @@ export const Skills = () => (
         </ul>
       </div>
       <div id="skills-column-three">
-        <h4>Misc.</h4>
+        <h3>Misc.</h3>
         <ul>
           <li><Arrow /> APIs</li>
           <li><Arrow /> Heroku</li>
