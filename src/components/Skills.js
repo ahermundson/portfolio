@@ -3,7 +3,7 @@ import Arrow from 'react-icons/lib/fa/caret-right'
 
 export const Skills = () => (
 
-  <div id="skills-container">
+  <div id="skills">
     <h2 id="skills-header">Technical Skills</h2>
     <div id="skills-list">
       <div id="skills-column-one">

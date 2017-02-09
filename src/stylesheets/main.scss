@@ -1,6 +1,6 @@
 $headers: 'Montserrat', sans-serif;
 $bodyFont: 'Open Sans', sans-serif;
-
+$transparentBackground: rgba(105,105,105, .8);
 
 * {
    margin: 0px;
@@ -12,28 +12,75 @@ $bodyFont: 'Open Sans', sans-serif;
 }
 
 header {
-  margin: 0px 25px;
-  padding-top: 25px;
+  height: 40px;
   color: #fff;
   display: flex;
-  flex-direction: column;
   justify-content: space-between;
   align-items: center;
   font-family: $headers;
+  background-color: rgb(105,105,105);
+
+  a {
+    color: #fff;
+
+    h2 {
+      text-decoration: none;
+    }
+  }
+
+  h2 {
+    margin-left: 10px;
+  }
+
+  #header-nav {
+    margin: 5px;
+    li {
+      display: inline;
+      margin: 10px;
+    }
+  }
 }
 
+
+
 #main {
-  background: url(/assets/06.png) no-repeat center center fixed;
+  background: url(/assets/background.jpg) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  height: 100vh;
+}
+
+.app {
+  height: 80%;
+}
+
+#home-container {
+  width: 70%;
+  height: 100%;
+  border: 15px solid #fff;
+  margin: 35px auto;
+  background-color: $transparentBackground;
+  font-family: 'Berkshire Swash', cursive;
+  text-align: center;
+  color: #fff;
+  h1 {
+    padding-top: 8%;
+    font-size: 5em;
+  }
+  h4 {
+    padding-top: 5%;
+    padding-left: 5px;
+    padding-right: 5px;
+    font-size: 2em;
+  }
 }
 
 #bio {
-  width: 50%;
+  width: 90%;
   margin: 5px auto;
-  padding-top: 25px;
+  padding: 25px;
   color: white;
   font-family: $bodyFont;
   display: flex;
@@ -57,11 +104,11 @@ header {
 }
 
 #skills-container {
-  width: 60%;
-  padding-top: 25px;
-  color: white;
-  padding-bottom: 25px;
-  margin: 0 auto;
+  width: 70%;
+  border: 15px solid #fff;
+  margin: 35px auto;
+  background-color: $transparentBackground;
+  color: #fff;
 }
 
 #skills-list {
