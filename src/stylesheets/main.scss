@@ -1,6 +1,6 @@
 $headers: 'Montserrat', sans-serif;
-$bodyFont: 'Open Sans', sans-serif;
-$cursive: 'Berkshire Swash', cursive;
+$bodyFont: 'PT Serif', serif;
+$cursive: 'Montserrat', sans-serif;
 $transparentBackground: rgba(105,105,105, .8);
 
 * {
@@ -24,6 +24,7 @@ header {
   justify-content: space-between;
   align-items: center;
   font-family: $headers;
+  font-weight: bold;
   background-color: rgb(105,105,105);
 
   a {
@@ -74,6 +75,8 @@ header {
     font-size: 5em;
   }
   h4 {
+    width: 80%;
+    margin: 0 auto;
     padding-top: 5%;
     padding-left: 5px;
     padding-right: 5px;
@@ -92,6 +95,10 @@ header {
   justify-content: center;
   align-items: center;
 
+  p {
+    font-size: 1.2em;
+  }
+
   img {
     margin-bottom: 15px;
   }
@@ -99,6 +106,7 @@ header {
   h2 {
     margin-bottom: 10px;
     font-family: $headers;
+    font-weight: bold;
   }
 }
 
@@ -145,6 +153,7 @@ header {
 #skills-header {
   text-align: center;
   font-family: $headers;
+  font-weight: bold;
 }
 
 // #skills-column-one, #skills-column-two {
@@ -152,11 +161,11 @@ header {
 // }
 
 #project-container {
-  background-color: #877A96;
   color: #fff;
   font-family: $bodyFont;
   padding-top: 25px;
   h2 {
+    font-size: 1.5em;
     text-align: center;
   }
 }
@@ -177,10 +186,16 @@ header {
 }
 
 .ads-project-info {
+  margin: 10px;
+  border: 5px solid white;
+  background-color: $transparentBackground;
   h3 {
     padding-top: 25px;
     text-align: center;
     margin-bottom: 50px;
+  }
+  ul {
+    list-style: none;
   }
   li {
     padding: 5px;
@@ -198,9 +213,15 @@ header {
 }
 
 .project-info {
+  margin: 10px;
+  border: 5px solid white;
+  background-color: $transparentBackground;
   h3 {
     text-align: center;
     margin-bottom: 50px;
+  }
+  ul {
+    list-style: none;
   }
   li {
     padding: 10px;
