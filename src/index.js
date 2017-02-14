@@ -1,6 +1,8 @@
 import React from 'react';
 import { render } from 'react-dom';
-import { Router, Route, hashHistory } from 'react-router'
+import { Router, Route, hashHistory, applyRouterMiddleware } from 'react-router'
+import {useTransitions, withTransition} from 'react-router-transitions';
+import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
 import { Header } from './components/Header'
 import { App } from './components/App'
 

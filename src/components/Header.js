@@ -12,7 +12,7 @@ export const Header = () => (
         <Link to="/projects" activeClassName="selected">
           <li>Projects</li>
         </Link>
-        <Link to ="/contacts" activeClassName="selected">
+        <Link to ="/contact" activeClassName="selected">
           <li>Contact</li>
         </Link>
       </ul>

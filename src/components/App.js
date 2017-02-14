@@ -4,6 +4,7 @@ import { Bio } from './Bio'
 import { Skills } from './Skills'
 import { Projects } from './Projects'
 import { Header } from './Header'
+import { Contact } from './Contact'
 
 export class App extends Component {
   constructor(props) {
@@ -19,7 +20,7 @@ export class App extends Component {
           <Bio />
           <Skills />
         </div>
-         : (this.props.location.pathname === "/projects") ? <Projects /> : <Home />}
+         : (this.props.location.pathname === "/projects") ? <Projects /> : (this.props.location.pathname === "/contact") ? <Contact /> : <Home />}
       </div>
     )
   }
