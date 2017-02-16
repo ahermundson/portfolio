@@ -241,3 +241,17 @@ header {
   justify-content: center;
   align-items: center;
 }
+
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 35%;
+  height: 30%;
+  margin: 50px auto;
+  color: white;
+}
+
+#autocomplete {
+  width: 100%;
+}

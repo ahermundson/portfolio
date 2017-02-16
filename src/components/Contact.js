@@ -16,8 +16,8 @@ class Autocomplete extends Component {
 
   render() {
 		return (
-			<div>
-				<input ref="inputName" type="text" list="name-list" />
+			<div >
+				<input ref="inputName" type="text" list="name-list" id="autocomplete"/>
 				<datalist id="name-list">
 					{this.props.options.map(
 						(opt, i) =>
@@ -37,9 +37,6 @@ export class Contact extends Component {
 
   submit(e) {
     e.preventDefault()
-    console.log('name', this.refs.name.value);
-    console.log('email', this.refs.email.value);
-    console.log('message', this.refs.message.value);
   }
 
   render() {
