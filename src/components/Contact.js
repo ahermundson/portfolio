@@ -1,4 +1,5 @@
 import { PropTypes, Component } from 'react'
+import Phone from 'react-icons/lib/fa/phone-square'
 
 const nameList = [
   "Alex Hermundson",
@@ -43,22 +44,28 @@ export class Contact extends Component {
     // const { name, email, message } = this.props
 
     return (
-      <form onSubmit={this.submit} className="contact-form">
-        <label htmlFor="name">Name</label>
-        <Autocomplete options={nameList}
-                      ref="name" />
-       <label htmlFor="email">Email</label>
-       <input id="email"
-              type="text"
-              required
-              ref="email" />
-       <label htmlFor="message">Message</label>
-       <input id="message"
-              type="text"
-              required
-              ref="message" />
-       <button>Submit</button>
-      </form>
+      <div id="contact-container">
+        <form onSubmit={this.submit} className="contact-form">
+          <label htmlFor="name">Name</label>
+          <Autocomplete options={nameList}
+                        ref="name" />
+         <label htmlFor="email">Email</label>
+         <input id="email"
+                type="text"
+                required
+                ref="email" />
+         <label htmlFor="message">Message</label>
+         <input id="message"
+                type="text"
+                required
+                ref="message" />
+         <button>Submit</button>
+        </form>
+        <div id="contact-info-container">
+          <Phone /> 651.216.9414
+          
+        </div>
+      </div>
     )
   }
 }
