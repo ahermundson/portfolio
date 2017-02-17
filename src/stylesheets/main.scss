@@ -179,28 +179,42 @@ header {
 }
 
 
+@media only screen and (max-width: 900px) {
+  #american-drapery-systems {
+    flex-direction: column;
+    justify-content: center;
+  }
+  #a-book-a-week {
+    flex-direction: column-reverse;
+  }
+  .ads-project-image {
+    width: null;
+  }
+}
+
 .ads-project-image {
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  width: 50%;
+  align-items: center;
 }
 
 .ads-project-info {
-  margin: 10px;
+  margin: 10px auto;
   border: 5px solid white;
   background-color: $transparentBackground;
   h3 {
     padding-top: 25px;
     text-align: center;
-    margin-bottom: 50px;
+    margin-bottom: 20px;
   }
   ul {
     list-style: none;
+    padding: 10px;
   }
   li {
     padding: 5px;
   }
-  margin-left: 10%;
   width: 40%;
 }
 
@@ -209,19 +223,19 @@ header {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 50%;
 }
 
 .project-info {
-  margin: 10px;
+  margin: 10px auto;
   border: 5px solid white;
   background-color: $transparentBackground;
   h3 {
     text-align: center;
-    margin-bottom: 50px;
+    margin-bottom: 20px;
   }
   ul {
     list-style: none;
+    padding: 10px;
   }
   li {
     padding: 10px;
@@ -265,6 +279,7 @@ input {
 
 #contact-container {
   display: flex;
+  flex-direction: column;
   margin: 25px auto;
   background-color: $transparentBackground;
   border: 5px solid #fff;
@@ -274,18 +289,19 @@ input {
 }
 
 #contact-header {
-  margin-top: 25px;
   text-align: center;
   color: #fff;
   font-family: $headers;
+  margin-bottom: 25px;
 }
 
 #contact-info-container{
   padding-left: 25px;
   color: #fff;
-  width: 50%;
+  font-family: $bodyFont;
+  font-size: 1.2em;
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  align-items: flex-end;
 }
