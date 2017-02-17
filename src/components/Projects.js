@@ -1,13 +1,39 @@
 import '../stylesheets/main.scss'
+import ImageGallery from 'react-image-gallery';
 import Arrow from 'react-icons/lib/fa/caret-right'
+import { Component } from 'react'
+
+class Gallery extends Component {
+  handleImageLoad(event) {
+    console.log('Image loaded ', event.target)
+  }
+  render() {
+    const images = [
+      {
+        original: '/assets/abaw-images/abaw-home.png'
+      },
+      {
+        original: '/assets/abaw-images/abaw-bookshelf.png'
+      },
+      {
+        original: '/assets/abaw-images/abaw-nightstand.png'
+      }
+    ]
+    return (
+      <ImageGallery
+        items={images}
+        slideInterval={2000}
+        onImageLoad={this.handleImageLoad}/>
+    );
+  }
+}
+
 
 export const Projects = () => (
   <div id="project-container">
     <h2>Projects</h2>
     <div id="a-book-a-week">
-      <div className="project-image">
-        <img src="/assets/a-book-a-week.png" />
-      </div>
+      <Gallery />
       <div className="project-info">
         <h3>A Book A Week</h3>
         <ul>
@@ -26,9 +52,7 @@ export const Projects = () => (
           <li><Arrow /> Technologies Used: AngularJS, Angular Material, PostgresQL, Node.js, express, Amazon Web Services and Firebase Authentication</li>
         </ul>
       </div>
-      <div className="ads-project-image">
-        <img src="/assets/a-book-a-week.png" />
-      </div>
+      <Gallery />
     </div>
   </div>
 )
