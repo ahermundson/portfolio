@@ -1,3 +1,5 @@
+@import "node_modules/react-image-gallery/styles/scss/image-gallery.scss";
+
 $headers: 'Montserrat', sans-serif;
 $bodyFont: 'PT Serif', serif;
 $cursive: 'Montserrat', sans-serif;
@@ -172,12 +174,26 @@ header {
 
 #a-book-a-week, #american-drapery-systems {
   display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#a-book-a-week {
+  flex-direction: column-reverse;
 }
 
 #american-drapery-systems {
   border-top: 1px solid white;
 }
 
+.image-gallery {
+  margin: 0 auto;
+  width: 66%;
+}
+
+.image-gallery-thumbnail.active {
+  border: none;
+}
 
 @media only screen and (max-width: 900px) {
   #american-drapery-systems {
@@ -215,7 +231,7 @@ header {
   li {
     padding: 5px;
   }
-  width: 40%;
+  width: 65%;
 }
 
 .project-image {
@@ -243,7 +259,7 @@ header {
   padding-top: 25px;
   display: flex;
   flex-direction: column;
-  width: 40%;
+  width: 65%;
 }
 
 .project {
