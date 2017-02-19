@@ -28,6 +28,28 @@ class Gallery extends Component {
   }
 }
 
+class GalleryAds extends Component {
+  handleImageLoad(event) {
+    console.log('Image loaded ', event.target)
+  }
+  render() {
+    const images = [
+      {
+        original: '/assets/abaw-images/ads-measure.png'
+      },
+      {
+        original: '/assets/abaw-images/ads-view-survey.png'
+      }
+    ]
+    return (
+      <ImageGallery
+        items={images}
+        slideInterval={2000}
+        onImageLoad={this.handleImageLoad}/>
+    );
+  }
+}
+
 
 export const Projects = () => (
   <div id="project-container">
@@ -52,7 +74,7 @@ export const Projects = () => (
           <li><Arrow /> Technologies Used: AngularJS, Angular Material, PostgresQL, Node.js, express, Amazon Web Services and Firebase Authentication</li>
         </ul>
       </div>
-      <Gallery />
+      <GalleryAds />
     </div>
   </div>
 )
