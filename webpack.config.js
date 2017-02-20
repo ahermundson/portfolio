@@ -1,4 +1,5 @@
 var webpack = require("webpack");
+var path = require('path')
 
 module.exports = {
   entry: './src/index.js',
@@ -7,6 +8,12 @@ module.exports = {
     filename: "bundle.js",
     publicPath: "assets"
   },
+  entry: './src/index.js',
+    output: {
+        path: path.join(__dirname, 'dist'),
+        filename: 'bundle.js',
+        publicPath: '/public/'
+    },
   devServer: {
     inline: true,
     contentBase: './dist',
