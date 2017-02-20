@@ -4,8 +4,8 @@
   "description": "Portfolio Site for Alex Hermundson",
   "main": "app.js",
   "scripts": {
-    "heroku-postbuild": "webpack -p --config ./webpack.prod.config.js --progress",
     "start": "webpack-dev-server",
+    "heroku-postbuild": "webpack -p --config ./webpack.config.js --progress",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Alex Hermundson",
@@ -28,6 +28,8 @@
     "webpack-dev-server": "^2.3.0"
   },
   "dependencies": {
+    "express": "^4.14.1",
+    "path": "^0.12.7",
     "react": "^15.4.2",
     "react-addons-css-transition-group": "^15.4.2",
     "react-dom": "^15.4.2",
