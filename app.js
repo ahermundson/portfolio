@@ -3,7 +3,7 @@ var path = require('path');
 var app = express();
 var portDecision = process.env.PORT || 3000;
 
-app.use(express.static('server/public'));
+app.use(express.static('dist/'));
 
 //Static Files
 app.get('/', function(req, res){
