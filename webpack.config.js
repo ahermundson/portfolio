@@ -13,7 +13,7 @@ module.exports = {
         path: path.join(__dirname, 'dist'),
         filename: 'bundle.js',
         publicPath: '/public/'
-    },
+  },
   devServer: {
     inline: true,
     contentBase: './dist',
