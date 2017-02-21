@@ -55,7 +55,7 @@ export class Contact extends Component {
           <span><Email />  hello@alexhermundson.com</span>
           <span><Github />  github.com/ahermundson</span>
           <span><Twitter /> @alex_hermundson</span>
-          <span><Linkedin /> <a href="http://www.linkedin.com/in/alex-hermundson">linkedin.com/in/alex-hermundson</a></span>
+          <span id="linkedin"><Linkedin /> <a href="http://www.linkedin.com/in/alex-hermundson">linkedin.com/in/alex-hermundson</a></span>
         </div>
       </div>
     )
