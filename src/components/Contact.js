@@ -51,11 +51,11 @@ export class Contact extends Component {
       <div id="contact-container">
         <h2 id="contact-header">Contact</h2>
         <div id="contact-info-container">
-          <span><Phone />  651.216.9414</span>
-          <span><Email />  hello@alexhermundson.com</span>
-          <span><Github />  github.com/ahermundson</span>
-          <span><Twitter /> @alex_hermundson</span>
-          <span id="linkedin"><Linkedin /> <a href="http://www.linkedin.com/in/alex-hermundson">linkedin.com/in/alex-hermundson</a></span>
+          <span className="contact-details"><Phone />  651.216.9414</span>
+          <span className="contact-details"><Email />  hello@alexhermundson.com</span>
+          <span className="contact-details"><Github />  github.com/ahermundson</span>
+          <span className="contact-details"><Twitter /> @alex_hermundson</span>
+          <span className="contact-details"><Linkedin />  <a href="http://www.linkedin.com/in/alex-hermundson">linkedin.com/in/alex-hermundson</a></span>
         </div>
       </div>
     )
