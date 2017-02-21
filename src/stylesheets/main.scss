@@ -312,4 +312,8 @@ input {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  a {
+    color: white;
+    text-decoration: none;
+  }
 }
