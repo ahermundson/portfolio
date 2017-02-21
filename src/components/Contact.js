@@ -3,6 +3,7 @@ import Phone from 'react-icons/lib/fa/phone-square'
 import Email from 'react-icons/lib/md/email'
 import Github from 'react-icons/lib/go/mark-github'
 import Twitter from 'react-icons/lib/fa/twitter'
+import Linkedin from 'react-icons/lib/fa/linkedin'
 
 const nameList = [
   "Alex Hermundson",
@@ -51,9 +52,10 @@ export class Contact extends Component {
         <h2 id="contact-header">Contact</h2>
         <div id="contact-info-container">
           <span><Phone />  651.216.9414</span>
-          <span><Email />  alex.hermundson@gmail.com</span>
+          <span><Email />  hello@alexhermundson.com</span>
           <span><Github />  github.com/ahermundson</span>
           <span><Twitter /> @alex_hermundson</span>
+          <span><Linkedin /> <a href="http://www.linkedin.com/in/alex-hermundson">linkedin.com/in/alex-hermundson</a></span>
         </div>
       </div>
     )
